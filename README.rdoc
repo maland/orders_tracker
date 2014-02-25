@@ -10,19 +10,19 @@ the Engine should be able to populate a button "track your order" to the main Ra
 Helper method should be called with or without any trackingnumber
   with:
     show the tracking information directly
-  without: 
+  without:
     popup a modal form where users can enter one DHL or FedEx tracking number, form should be shown using ajax
     after submitting, the engine should check if it is an DHL or FedEx tracking code
   
 Additional requirements:
   Only valid tracking numbers are allowed to submit.
   Layouting with bootstrap
-  Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid ! 
+  Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
   After submitting
     Show the current status of the order
     Show the previous statuses in a table
   Provide a helper button to access this form from the main Rails app.
-  You can use this pages for example for checking statuses: 
+  You can use this pages for example for checking statuses:
     http://www.dhl.de/en/express/sendungsverfolgung.html (express / national)
     https://www.fedex.com/fedextrack/
   
