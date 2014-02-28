@@ -7,16 +7,19 @@ Write a Rails engine to track orders from DHL and FedEx
 Requirements:
 =============
 the Engine should be able to populate a button "track your order" to the main Rails app
+
 Helper method should be called with or without any trackingnumber
   with:
     show the tracking information directly
   without:
     popup a modal form where users can enter one DHL or FedEx tracking number, form should be shown using ajax
     after submitting, the engine should check if it is an DHL or FedEx tracking code
+    
+    könnte man auch mit remote: true usw. lösen, evtl. besser als bisher
   
 Additional requirements:
   Only valid tracking numbers are allowed to submit.
-  Layouting with bootstrap
+  √ Layouting with bootstrap
   Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
   After submitting
     Show the current status of the order

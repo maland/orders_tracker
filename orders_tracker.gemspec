@@ -17,11 +17,21 @@ Gem::Specification.new do |s|
 
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.3"
+  s.add_dependency 'rails', '~> 4.0.3'
+  s.add_dependency 'bootstrap-sass'
+  s.add_dependency 'sass-rails', '~> 4.0.0'
+  s.add_dependency 'jquery-rails', '~> 3.1.0'
 
+  s.add_development_dependency 'thin'
   s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'rspec-rails'
-  s.add_development_dependency 'webrat'
-  # s.add_development_dependency 'capybara'
+  # s.add_development_dependency 'webrat'
+  s.add_development_dependency 'capybara', '< 2.2'
+  s.add_development_dependency 'capybara-webkit', '~> 1.1.1'
+  s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'factory_girl_rails'
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'rb-fsevent'
+  s.add_development_dependency 'growl'
+  s.add_development_dependency 'selenium-webdriver'
 end

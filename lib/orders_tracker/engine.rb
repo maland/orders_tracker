@@ -1,3 +1,6 @@
+require 'jquery-rails'
+require 'bootstrap-sass'
+
 module OrdersTracker
   class Engine < ::Rails::Engine
 
