@@ -15,10 +15,8 @@ Helper method should be called with or without any trackingnumber
     popup a modal form where users can enter one DHL or FedEx tracking number, form should be shown using ajax
     after submitting, the engine should check if it is an DHL or FedEx tracking code
     
-    könnte man auch mit remote: true usw. lösen, evtl. besser als bisher
-  
 Additional requirements:
-  Only valid tracking numbers are allowed to submit.
+  √ Only valid tracking numbers are allowed to submit.
   √ Layouting with bootstrap
   Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
   After submitting

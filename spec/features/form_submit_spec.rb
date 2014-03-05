@@ -19,9 +19,13 @@ feature "user submits form" do
   end
   
   scenario "with invalid code", js: true do
-    submit_form_with "xxx"
-    expect(page).to have_content "invalid"
+    submit_form_with "123"
+    sleep 0.1
+    expect(page.driver.alert_messages).to have_content "invalid"
   end
   
-  scenario "with no code", js: true
+  scenario "with no code", js: true do
+    submit_form_with ""
+    expect(page).to have_content('no tracking code present')
+  end
 end
