@@ -1,43 +1,50 @@
-= OrdersTracker
+#OrdersTracker
 
-This project rocks and uses MIT-LICENSE.
+This project uses MIT-LICENSE.
 
 Write a Rails engine to track orders from DHL and FedEx
 
-Requirements:
-=============
-the Engine should be able to populate a button "track your order" to the main Rails app
+developper remarks are prefaced with *dev. remark:* and in font style *italic*
 
-Helper method should be called with or without any trackingnumber
-  with:
-    show the tracking information directly
-  without:
-    popup a modal form where users can enter one DHL or FedEx tracking number, form should be shown using ajax
-    after submitting, the engine should check if it is an DHL or FedEx tracking code
-    
-Additional requirements:
-  √ Only valid tracking numbers are allowed to submit.
-  √ Layouting with bootstrap
-  √ Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
-  After submitting
-    Show the current status of the order
-    Show the previous statuses in a table
-  √ Provide a helper button to access this form from the main Rails app.
-  You can use this pages for example for checking statuses:
+##Requirements
+
+- the Engine should be able to populate a button "track your order" to the main Rails app √ *dev. remark: interpreted button as form, according to the following requirements*
+- Helper method should be called with or without any trackingnumber √ *dev. remark: as a helper method is not called with user input, this helper method is interpreted to create a form*
+  - with:
+    show the tracking information directly √ *dev. remark: result page not layouted to save my time, as example is already given with the form*
+  - without:
+    - popup a modal form where users can enter one DHL or FedEx tracking number, form should be shown using ajax √
+    - after submitting, the engine should check if it is an DHL or FedEx tracking code √ *dev. remark: possibility to have different partials according to shipping company; shown in a short message on result page*
+
+###Additional requirements
+
+  - Only valid tracking numbers are allowed to submit. √
+  - Layouting with bootstrap √ *dev. remark: only form; rest omitted to save time*
+  - Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid ! √ *dev. remark: most simple check according to my knowledge of validation criteria*
+  - After submitting
+   - Show the current status of the order √ *dev. remark: as last field, could be more highlighted but omitted to save time*
+   - Show the previous statuses in a table √ *dev. remark: rudimentary implementation serving as example; no api was given*
+   - Provide a helper button to access this form from the main Rails app. *dev. remark: interpreted as written above*
+  - You can use this pages for example for checking statuses: *dev. remark: i will omitt unneccessary details of layouting and process complexity which are not related to the implementation to save your and my time*
     http://www.dhl.de/en/express/sendungsverfolgung.html (express / national)
     https://www.fedex.com/fedextrack/
   
-Example tracking codes:
+###Example tracking codes
 
-DHL
-
+####DHL
 054655196483
+
 054655197259
+
 054655197322
+
 054655197473
 
-FedEx
+####FedEx
 1010098142170009131600578986691790
+
 1010095742170825100800578986691723
+
 1010095742170963541600578986691745
+
 1010095742170014832400578986691756

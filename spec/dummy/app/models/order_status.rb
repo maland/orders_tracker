@@ -5,6 +5,7 @@ class OrderStatus
   def self.find(tracking_code)
     [
       { datetime: DateTime.parse("15.03.2014 08:00"), info: "packed" },
+      { datetime: DateTime.parse("15.03.2014 10:30"), info: "shipped" },
       { datetime: DateTime.parse("17.03.2014 10:45"), info: "successful delivered" },
     ]
   end
