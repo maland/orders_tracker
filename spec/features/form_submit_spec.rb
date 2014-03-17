@@ -11,6 +11,7 @@ feature "user submits form" do
   scenario "with valid DHL tracking code", js: true do
     submit_form_with "054655196483"
     expect(page).to have_content('status of your order with tracking N° 054655196483')
+    expect(page).to have_css 'table', text: "successful delivered"
   end
   
   scenario "with valid FedEx code", js: true do

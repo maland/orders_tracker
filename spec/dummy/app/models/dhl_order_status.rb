@@ -1,0 +1,2 @@
+class DhlOrderStatus < OrderStatus
+end

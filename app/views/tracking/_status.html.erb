@@ -2,3 +2,15 @@
 
 <h2>status of your order with tracking N° <%= @number %></h2>
 
+<table>
+  <tr>
+    <th>date/time</th>
+    <th>status</th>
+  </tr>
+  <% @statuses.each do |status| %>
+  <tr>
+    <td><%= status[:datetime] %></td>
+    <td><%= status[:info] %></td>
+  </tr>
+  <% end %>
+</table>

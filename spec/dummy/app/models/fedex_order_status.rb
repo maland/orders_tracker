@@ -1,0 +1,3 @@
+class FedexOrderStatus < OrderStatus
+  
+end

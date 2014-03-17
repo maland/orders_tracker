@@ -8,13 +8,15 @@ class TrackingController < ApplicationController
   
   private
 
-  # würde bei aufwendigerem Code in ein Constraint oder eingene Klasse unter lib/ gehen
+  # in case of more complex code it would be moved in a Constraint or a own class in lib/
   def validate(tracking_code)
     if tracking_code.blank?
       :blank
     elsif tracking_code.match( /^\d{12}$/ )
+      @statuses = DhlOrderStatus.find tracking_code
       :dhl
     elsif tracking_code.match( /^\d{34}$/ )
+      @statuses = FedexOrderStatus.find tracking_code
       :fedex
     else
       :error_alert

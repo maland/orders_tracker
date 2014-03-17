@@ -18,11 +18,11 @@ Helper method should be called with or without any trackingnumber
 Additional requirements:
   √ Only valid tracking numbers are allowed to submit.
   √ Layouting with bootstrap
-  Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
+  √ Using an algorithm to check if it is an DHL or FedEx tracking number and if they are valid !
   After submitting
     Show the current status of the order
     Show the previous statuses in a table
-  Provide a helper button to access this form from the main Rails app.
+  √ Provide a helper button to access this form from the main Rails app.
   You can use this pages for example for checking statuses:
     http://www.dhl.de/en/express/sendungsverfolgung.html (express / national)
     https://www.fedex.com/fedextrack/
