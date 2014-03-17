@@ -2,9 +2,12 @@
 
 This project uses MIT-LICENSE.
 
-Write a Rails engine to track orders from DHL and FedEx
+This was a test case to see my way of implementing a certain task. The given requirements are shown below. The test case implyed that no further guidance could be asked from the examiner.
 
-developper remarks are prefaced with *dev. remark:* and in font style *italic*
+My developper remarks are prefaced with *dev. remark:* and in font style *italic*.
+
+
+Write a Rails engine to track orders from DHL and FedEx
 
 ##Requirements
 
@@ -48,3 +51,7 @@ developper remarks are prefaced with *dev. remark:* and in font style *italic*
 1010095742170963541600578986691745
 
 1010095742170014832400578986691756
+
+##Result
+
+including this engine to your rails app you will have a helper method `tracking_number_form` allowing you to do what is expected in the above requirements

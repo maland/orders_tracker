@@ -9,7 +9,7 @@
   </tr>
   <% @statuses.each do |status| %>
   <tr>
-    <td><%= status[:datetime] %></td>
+    <td><%= l status[:datetime] %></td>
     <td><%= status[:info] %></td>
   </tr>
   <% end %>
